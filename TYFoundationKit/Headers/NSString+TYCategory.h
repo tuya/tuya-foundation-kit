@@ -2,7 +2,7 @@
 //  NSString+TYCategory.h
 //  TYFoundationKit
 //
-//  Created by Pany on 2019/3/7.
+//  Created by TuyaInc on 2019/3/7.
 //
 
 #ifndef NSString_TYCategory_h
