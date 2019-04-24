@@ -1,12 +1,12 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TYFoundationKit'
-  s.version          = '0.0.1'
+  s.version          = '0.0.1-rc.1'
   s.summary          = 'TYFoundationKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage         = 'https://github.com/TuyaInc/TYFoundationKit'
   s.author           = { 'TuyaInc' => 'www.tuya.com' }
-  s.source           = { :git => 'https://github.com/TuyaInc/TYFoundationKit.git', :branch => 'cocoa', :commit => '7e4137d5740d77737d9ac87516b3993e0ed549c9' }
+  s.source           = { :git => 'https://github.com/TuyaInc/TYFoundationKit.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
