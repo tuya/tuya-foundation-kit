@@ -2,7 +2,7 @@
 //  TYFoundationKitTests.m
 //  TYFoundationKitTests
 //
-//  Created by panyfun on 01/28/2019.
+//  Created by TuyaInc on 01/28/2019.
 //  Copyright (c) 2019 panyfun. All rights reserved.
 //
 

@@ -8,10 +8,12 @@
 #ifndef TYFoundationKit_h
 #define TYFoundationKit_h
 
+#import "NSObjtct+TYFoundation.h"
 #import "NSArray+TYCategory.h"
 #import "NSDate+TYCategory.h"
 #import "NSURL+TYCategory.h"
 #import "NSString+TYCategory.h"
+#import "NSData+TYConverter.h"
 
 // KV Storage Tool
 #if __has_include(<TYStorageLibrary/TYSLKVOperator.h>)
