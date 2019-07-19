@@ -9,5 +9,6 @@
 #define NSDate_TYCategory_h
 
 #import "NSDate+TYTimeInterval.h"
+#import "NSDate+TYFormat.h"
 
 #endif /* NSDate_TYCategory_h */

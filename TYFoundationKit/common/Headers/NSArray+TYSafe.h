@@ -15,4 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface NSMutableArray (TYSafe)
+
+- (void)ty_safeAddObject:(id)anObject;
+- (void)ty_safeInsertObject:(id)anObject atIndex:(NSUInteger)index;
+
+@end
+
 NS_ASSUME_NONNULL_END

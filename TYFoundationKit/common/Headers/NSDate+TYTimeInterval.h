@@ -13,18 +13,18 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  current time interval since 1970 in second
  */
-extern NSTimeInterval TY_TimestampSEC(void);
+FOUNDATION_EXTERN NSTimeInterval TY_TimestampSEC(void);
 /**
  current time interval since 1970 in millisecond
  */
-extern NSTimeInterval TY_TimestampMSEC(void);
+FOUNDATION_EXTERN NSTimeInterval TY_TimestampMSEC(void);
 
 /**
  current time interval since specific date
  if sinceDate is nil, return time interval since 1970
  if millisecond is YES, return time interval in millisecond
  */
-extern NSTimeInterval TY_TimestampSince(NSDate * _Nullable sinceDate, BOOL millisecond);
+FOUNDATION_EXTERN NSTimeInterval TY_TimestampSince(NSDate * _Nullable sinceDate, BOOL millisecond);
 
 
 

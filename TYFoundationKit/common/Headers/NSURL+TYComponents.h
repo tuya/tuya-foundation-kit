@@ -19,6 +19,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) NSArray *ty_pathArray;
 @property (nonatomic, strong, readonly) NSDictionary *ty_queryDictionary;
 
+/**
+ if value isn't NSString, it will be ignore
+ */
+- (NSURL *)ty_URLByAppendingQuery:(NSDictionary<NSString *, NSString *> *)query;
+- (id)ty_valueForQueryKey:(NSString *)key;
+
 @end
 
 NS_ASSUME_NONNULL_END

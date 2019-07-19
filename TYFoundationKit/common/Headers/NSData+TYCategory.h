@@ -8,6 +8,7 @@
 #ifndef NSData_TYCategory_h
 #define NSData_TYCategory_h
 
-#import "NSData+TYConverter.h"
+#import "NSData+TYStringEncoding.h"
+#import "NSData+TYEncrypt.h"
 
 #endif /* NSData_TYCategory_h */
