@@ -1,5 +1,5 @@
 //
-//  NSURL+TYPfefs.h
+//  NSURL+TYPrefs.h
 //  TYFoundationKit
 //
 //  Created by TuyaInc on 2019/5/6.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSURL (TYPfefs)
+@interface NSURL (TYPrefs)
 
 + (NSURL *)ty_appPrefsWifi;
 + (NSURL *)ty_appPrefsBLE;

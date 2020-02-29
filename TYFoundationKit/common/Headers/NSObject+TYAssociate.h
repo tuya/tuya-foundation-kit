@@ -11,14 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (TYAssociate)
 
-- (void)ty_setAssociate:(id)value withKey:(void *)key;
-- (void)ty_setAssociate:(id)value withStringKey:(NSString *)keyStr;
+- (void)ty_setAssociate:(_Nullable id)value withKey:(const void *)key;
+- (void)ty_setAssociate:(_Nullable id)value withStringKey:(NSString *)keyStr;
 
-- (void)ty_setWeakAssociate:(id)value withKey:(void *)key;
-- (void)ty_setWeakAssociate:(id)value withStringKey:(void *)keyStr;
+- (void)ty_setWeakAssociate:(_Nullable id)value withKey:(const void *)key;
+- (void)ty_setWeakAssociate:(_Nullable id)value withStringKey:(NSString *)keyStr;
 
-- (id)ty_getAssociateWithKey:(void *)key;
-- (id)ty_getAssociateWithStringKey:(NSString *)keyStr;
+- (_Nullable id)ty_getAssociateWithKey:(const void *)key;
+- (_Nullable id)ty_getAssociateWithStringKey:(NSString *)keyStr;
 
 - (void)ty_removeAllAssociate;
 

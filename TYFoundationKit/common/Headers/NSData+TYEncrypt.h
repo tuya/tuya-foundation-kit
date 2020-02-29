@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-// AES 加密，只支持返回 Hex Sstring
+// AES 加密，只支持返回 Hex String
 @interface NSData (TYAESEncrypt)
 - (NSData *)ty_AES128EncryptWithKey:(NSString *)key;
 - (NSData *)ty_AES128DecryptWithKey:(NSString *)key;

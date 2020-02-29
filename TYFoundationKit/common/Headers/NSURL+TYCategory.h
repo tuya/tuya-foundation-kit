@@ -9,6 +9,6 @@
 #define NSURL_TYCategory_h
 
 #import "NSURL+TYComponents.h"
-#import "NSURL+TYPfefs.h"
+#import "NSURL+TYPrefs.h"
 
 #endif /* NSURL_TYCategory_h */

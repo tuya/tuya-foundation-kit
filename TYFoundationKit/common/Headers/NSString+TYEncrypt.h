@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TYDigestImpl.h"
 #import "TYRSAImpl.h"
 #import "TYAESImpl.h"
 
@@ -15,6 +16,7 @@
 
 - (NSString *)ty_sha1String;
 
+- (NSData *)ty_hmacWithKey:(NSString *)key type:(TYHmacType)type;
 @end
 
 

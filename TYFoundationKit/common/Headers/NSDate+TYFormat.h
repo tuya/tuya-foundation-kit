@@ -24,14 +24,15 @@ FOUNDATION_EXTERN BOOL TY_Is24HourClock(void);
 
 /**
  format current date
- if formatter == nil, use "yyyy-MM-dd HH:mm:ss" insted
- */
-- (NSString *)ty_stringWithFormatter:(NSDateFormatter * _Nullable)formatter;
-/**
- format current date
  if dateFormat == nil, use "yyyy-MM-dd HH:mm:ss" insted
  */
 - (NSString *)ty_stringWithFormat:(NSString * _Nullable)dateFormat;
+- (NSString *)ty_stringWithFormat:(NSString * _Nullable)dateFormat timeZone:(NSTimeZone * _Nullable)timeZone;
+/**
+ format current date
+ if formatter == nil, use "yyyy-MM-dd HH:mm:ss" insted
+ */
+- (NSString *)ty_stringWithFormatter:(NSDateFormatter * _Nullable)formatter;
 
 
 /**
@@ -39,6 +40,7 @@ FOUNDATION_EXTERN BOOL TY_Is24HourClock(void);
  if dateFormat == nil, use "yyyy-MM-dd HH:mm:ss" insted
  */
 + (instancetype)ty_dateFromString:(NSString *)dateStr withFormat:(NSString * _Nullable)dateFormat;
++ (instancetype)ty_dateFromString:(NSString *)dateStr withFormat:(NSString * _Nullable)dateFormat timeZone:(NSTimeZone * _Nullable)timeZone;
 /**
  create date with format string
  if dateFormat == nil, use "yyyy-MM-dd HH:mm:ss" insted
@@ -47,7 +49,7 @@ FOUNDATION_EXTERN BOOL TY_Is24HourClock(void);
 
 
 /**
- return YES if ty_year ty_month ty_day are equal between self and [NSDate date]
+ return YES if self.ty_year self.ty_month self.ty_day equal to [NSDate date]
  */
 - (BOOL)ty_isToday;
 

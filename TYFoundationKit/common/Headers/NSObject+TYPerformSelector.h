@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (id)ty_performSelector:(SEL)sel;
 
 /**
+ Instead of performselector method with NSInvocation
  params_key: index of argument, begin from 0
  params_value: value of argument
  */

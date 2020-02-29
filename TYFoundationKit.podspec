@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name             = 'TYFoundationKit'
   
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   
   s.summary          = 'Foundation Kit Powered By Tuya'
   s.homepage         = 'https://github.com/TuyaInc/TYFoundationKit'

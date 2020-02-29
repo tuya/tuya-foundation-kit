@@ -46,7 +46,9 @@
 #import "TYAESImpl.h"
 #import "TYRSAImpl.h"
 
-
+#pragma mark - Localized
+#import "TYLanguageLoader.h"
+#import "NSString+TYLocalized.h"
 
 #if TARGET_OS_IOS
 

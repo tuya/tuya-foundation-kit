@@ -9,9 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSArray (TYSafe)
+@interface NSArray<ObjectType> (TYSafe)
 
-- (id)ty_safeObjectAtIndex:(NSUInteger)index;
+- (ObjectType)ty_safeObjectAtIndex:(NSUInteger)index;
 
 @end
 

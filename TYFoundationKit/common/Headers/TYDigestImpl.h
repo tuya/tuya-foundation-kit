@@ -18,13 +18,24 @@ typedef NS_ENUM(NSInteger, TYDigestType) {
     TYDigestSHA512Type,     // SHA512算法
 };
 
-
+typedef NS_ENUM(NSInteger, TYHmacType) {
+    TYHmacMD5Type,          // MD5算法
+    TYHmacSHA1Type,         // SHA1算法
+    TYHmacSHA224Type,       // SHA224算法
+    TYHmacSHA256Type,       // SHA256算法
+    TYHmacSHA384Type,       // SHA384算法
+    TYHmacSHA512Type,       // SHA512算法
+};
 
 /*
  摘要算法实现
  */
 @interface TYDigestImpl : NSObject
 
+// MD算法和SHA算法
 + (NSData *)digestWithData:(NSData *)data type:(TYDigestType)digestType;
+
+// HMAC算法
++ (NSData *)hmacWithData:(NSData *)data keyData:(NSData *)keyData type:(TYHmacType)hmacType;
 
 @end

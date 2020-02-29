@@ -9,7 +9,7 @@
 
 
 /**
- post notification on main thread
+ post directly if current thread is main, async to main thread otherwise
  */
 FOUNDATION_EXTERN void TY_PostNotification(NSString * _Nonnull name, NSDictionary * _Nullable userInfo);
 
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- post directly if current thread is main, async tor main otherwise
+ post directly if current thread is main, async to main thread otherwise
  */
 + (void)ty_postNotificationAsyncOnMain:(NSString *)name;
 + (void)ty_postNotificationAsyncOnMain:(NSString *)name withUserInfo:(nullable NSDictionary *)userInfo;
